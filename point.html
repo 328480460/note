@@ -58,7 +58,7 @@
     linkPiont.prototype.render = function() {
       var _this = this;
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-      for (var i = <0></0>; i < this.pointArr.length; i++) {
+      for (var i = 0; i < this.pointArr.length; i++) {
         this.drawPoint(this.pointArr[i].x, this.pointArr[i].y, this.pointArr[i].r, this.pointArr[i].color);
         for (var j = 0; j < this.pointArr.length; j++) {
           if (Math.pow(this.pointArr[i].x - this.pointArr[j].x, 2) + Math.pow(this.pointArr[i].y - this.pointArr[j].y, 2) < Math.pow(this.minLength, 2)) {
